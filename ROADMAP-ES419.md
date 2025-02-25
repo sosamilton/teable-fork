@@ -29,11 +29,13 @@ Este documento rastrea el progreso de la traducción del sistema Teable al espa�
 
 ## Componentes de UI
 
-- [ ] Actualizar LanguagePicker.tsx para incluir español latinoamericano
+- [x] Actualizar LanguagePicker.tsx para incluir español latinoamericano
   - Ubicación: apps/nextjs-app/src/features/app/components/LanguagePicker.tsx
-  - Cambios necesarios:
-    - Agregar entrada para 'es-419' en el array de idiomas
-    - Agregar título "Español (Latinoamérica)"
+  - Cambios realizados:
+    - Agregada entrada para 'es-419' en el array de idiomas
+    - Agregado título "Español (Latinoamérica)"
+    - Mejorado el manejo de códigos de idioma con región
+    - Corregido operador de comparación de idiomas
 
 ## Estado Actual y Próximos Pasos
 
@@ -58,19 +60,18 @@ Este documento rastrea el progreso de la traducción del sistema Teable al espa�
 4. Plugins:
    - chart/es-419.json
    - sheet-form-view/es-419.json
+5. Actualización de UI:
+   - [x] LanguagePicker.tsx actualizado con soporte para es-419
 
 ### Próximos Pasos (🔄)
 
-1. Actualización de UI:
-   - [ ] Modificar LanguagePicker.tsx para incluir soporte para es-419
-
-2. Pruebas de Integración:
+1. Pruebas de Integración:
    - [ ] Verificar que todos los textos se muestren correctamente
    - [ ] Probar el cambio de idioma
    - [ ] Verificar que no haya textos sin traducir
    - [ ] Validar consistencia en términos y expresiones
 
-3. Documentación:
+2. Documentación:
    - [ ] Actualizar la documentación para incluir información sobre el soporte en español
    - [ ] Documentar las convenciones de traducción utilizadas
    - [ ] Crear guía de contribución para futuras traducciones
@@ -88,3 +89,6 @@ Este documento rastrea el progreso de la traducción del sistema Teable al espa�
 - Completados: 16
 - Pendientes: 0
 - Porcentaje completado: 100%
+
+## Siguiente Paso Inmediato
+El siguiente paso es realizar las pruebas de integración para asegurar que la traducción y el selector de idioma funcionen correctamente. ¿Te gustaría que procedamos con las pruebas?
