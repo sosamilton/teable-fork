@@ -1,0 +1,49 @@
+{
+  "brand": "Teable",
+  "actions": {
+    "title": "Acciones",
+    "add": "Agregar",
+    "save": "Guardar",
+    "doNotSave": "No guardar",
+    "submit": "Enviar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "edit": "Editar",
+    "fill": "Completar",
+    "update": "Actualizar",
+    "create": "Crear",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "back": "Volver",
+    "remove": "Eliminar",
+    "saveSucceed": "¡Guardado con éxito!"
+  },
+  "settings": {
+    "title": "Configuración",
+    "back": "Volver al inicio",
+    "account": {
+      "title": "Mi perfil"
+    }
+  },
+  "guide": {
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "done": "Listo",
+    "skip": "Omitir"
+  },
+  "billing": {
+    "overLimits": "Límites excedidos",
+    "overLimitsDescription": "Tu suscripción actual ha excedido su límite de uso. Por favor, actualiza tu plan para continuar usando esta función sin interrupciones.",
+    "userLimitExceededDescription": "La instancia actual ha alcanzado el número máximo de usuarios permitidos por tu licencia. Por favor, desactiva algunos usuarios o actualiza la licencia.",
+    "unavailableInPlanTips": "El plan de suscripción actual no admite esta función"
+  },
+  "role": {
+    "title": {
+      "owner": "Propietario",
+      "creator": "Creador",
+      "editor": "Editor"
+    }
+  }
+}

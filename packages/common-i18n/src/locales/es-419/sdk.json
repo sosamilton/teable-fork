@@ -1,0 +1,90 @@
+{
+  "common": {
+    "comingSoon": "Próximamente",
+    "empty": "Vacío",
+    "noRecords": "No hay registros disponibles",
+    "unnamedRecord": "Registro sin nombre",
+    "untitled": "Sin título",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "done": "Listo",
+    "create": "Crear",
+    "search": {
+      "placeholder": "Buscar...",
+      "empty": "No se encontraron resultados"
+    },
+    "selectPlaceHolder": "Seleccionar...",
+    "loading": "Cargando...",
+    "loadMore": "Cargar más",
+    "uploadFailed": "Error al subir",
+    "rowCount": "{{count}} registros",
+    "summary": "Resumen",
+    "summaryTip": "Pasa el cursor para seleccionar resumen",
+    "actions": "Acciones",
+    "remove": "Eliminar"
+  },
+  "preview": {
+    "previewFileLimit": "Límite de tamaño para vista previa: {{size}}MB, por favor descarga para ver.",
+    "loadFileError": "Error al cargar el archivo"
+  },
+  "undoRedo": {
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "undoFailed": "Error al deshacer",
+    "redoFailed": "Error al rehacer",
+    "nothingToUndo": "Nada para deshacer",
+    "nothingToRedo": "Nada para rehacer",
+    "undoSucceed": "Deshacer exitoso",
+    "redoSucceed": "Rehacer exitoso",
+    "undoing": "deshaciendo...",
+    "redoing": "rehaciendo..."
+  },
+  "editor": {
+    "attachment": {
+      "uploadDragOver": "Suelta para subir archivo",
+      "uploadDragDefault": "Pega o arrastra y suelta para subir aquí",
+      "upload": "subir"
+    },
+    "date": {
+      "placeholder": "Selecciona una fecha",
+      "today": "Hoy"
+    }
+  },
+  "filter": {
+    "label": "Filtro",
+    "displayLabel": "Filtrar por ",
+    "displayLabel_other": "Filtrar por {{fieldName}} y {{count}} otros campos",
+    "addCondition": "Agregar condición"
+  },
+  "field": {
+    "title": {
+      "singleLineText": "Texto de una línea",
+      "longText": "Texto largo",
+      "singleSelect": "Selección única"
+    }
+  },
+  "formula": {
+    "SUM": {
+      "summary": "Suma los números. Equivalente a número1 + número2 + ...",
+      "example": "SUM(100, 200, 300) => 600"
+    },
+    "MID": {
+      "summary": "Extrae una subcadena de count caracteres comenzando en whereToStart.",
+      "example": "MID(\"Hello Teable\", 6, 6) => \"Teable\""
+    },
+    "MONTH": {
+      "summary": "Devuelve el mes de una fecha como un número entre 1 (Enero) y 12 (Diciembre).",
+      "example": "MONTH(\"2023-09-08\") => 9"
+    },
+    "LAST_MODIFIED_TIME": {
+      "summary": "Devuelve la fecha y hora de la modificación más reciente realizada por un usuario en un campo no calculado en la tabla.",
+      "example": "LAST_MODIFIED_TIME() => \"2023-09-08 18:00:00\""
+    }
+  },
+  "functionType": {
+    "fields": "Campos",
+    "numeric": "Numérico",
+    "text": "Texto"
+  }
+}

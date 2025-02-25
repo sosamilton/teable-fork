@@ -1,0 +1,86 @@
+{
+  "toolbar": {
+    "comingSoon": "Próximamente",
+    "viewFilterInShare": "Esta vista se está utilizando en un enlace compartido. Las modificaciones a la configuración de la vista también cambiarán el enlace compartido.",
+    "createFieldButtonText": "Crear un nuevo campo <0/>",
+    "others": {
+      "share": {
+        "label": "Compartir",
+        "statusLabel": "Compartiendo",
+        "noPermission": "Sin permiso para compartir vista",
+        "shareLink": "Enlace para compartir",
+        "copied": "Copiado",
+        "genLink": "Generar nuevo enlace",
+        "allowCopy": "Permitir a los visualizadores copiar datos de esta vista",
+        "showAllFields": "Mostrar todos los campos en registros expandidos",
+        "restrict": "Restringir por contraseña",
+        "tips": "Las personas con el enlace pueden ver la vista.",
+        "passwordTitle": "Ingresa una contraseña",
+        "passwordTips": "Restricciones de contraseña para acceder a las vistas compartidas",
+        "embed": "Incrustar",
+        "embedPreview": "Vista previa incrustada",
+        "hideToolbar": "Ocultar barra de herramientas",
+        "URLSetting": "Configuración de parámetros URL",
+        "URLSettingDescription": "Ajustar las siguientes configuraciones no afectará los enlaces compartidos. Necesitas copiar el enlace con los nuevos parámetros para que surta efecto",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "requireLogin": "Requerir inicio de sesión"
+      },
+      "extensions": {
+        "label": "Extensiones",
+        "graph": "Gráfico"
+      },
+      "api": {
+        "label": "API",
+        "restfulApi": "API RESTful",
+        "databaseConnection": "Conexión a Base de Datos"
+      },
+      "personalView": {
+        "personal": "Personal",
+        "collaborative": "Colaborativo",
+        "dialog": {
+          "title": "Cambiar a modo colaborativo",
+          "description": "Al cambiar al modo colaborativo, la configuración personal de la vista se sincronizará con todos, por favor confirma si deseas sincronizar",
+          "cancelText": "No sincronizar",
+          "confirmText": "Sincronizar"
+        }
+      }
+    }
+  },
+  "welcome": {
+    "title": "Bienvenido",
+    "description": "Comienza a organizar tus datos"
+  },
+  "field": {
+    "fieldManagement": "Gestión de Campos",
+    "fieldManagementDesc": "Propiedades detalladas para todos los campos de la tabla actual",
+    "advancedProps": "Propiedades avanzadas",
+    "hide": "ocultar",
+    "editor": {
+      "addField": "Agregar Campo",
+      "editField": "Editar Campo",
+      "insertField": "Insertar Campo",
+      "graph": "Gráfico"
+    },
+    "fieldType": "Tipo de Campo"
+  },
+  "table": {
+    "newTableLabel": "Nueva tabla",
+    "rename": "Renombrar",
+    "design": "Diseñar"
+  },
+  "import": {
+    "title": {
+      "upload": "Subir",
+      "import": "Importar",
+      "localFile": "Archivos Locales"
+    }
+  },
+  "calendar": {
+    "toolbar": {
+      "config": "Configuración de Calendario",
+      "startDateField": "Campo de fecha de inicio",
+      "endDateField": "Campo de fecha de fin"
+    }
+  }
+}
