@@ -1,119 +1,159 @@
-# Roadmap de Traducción al Español Latinoamericano (es-419)
+# Roadmap de Internacionalización al Español (LATAM)
 
-Este documento rastrea el progreso de la traducción del sistema Teable al español latinoamericano.
+## ✅ Completado
 
-## Archivos Principales (packages/common-i18n/src/locales/es-419/)
+### Traducciones
+- Archivos JSON traducidos en `/packages/common-i18n/src/locales/es-419/`:
+  - auth.json
+  - common.json (parcial)
+  - dashboard.json
+  - developer.json
+  - oauth.json
+  - plugin.json
+  - sdk.json (parcial)
+  - setting.json
+  - share.json
+  - space.json
+  - system.json
+  - table.json (parcial)
+  - token.json
+  - zod.json
 
-- [x] auth.json - Completado
-- [x] common.json - Completado
-- [x] dashboard.json - Completado
-- [x] developer.json - Completado
-- [x] oauth.json - Completado
-- [x] plugin.json - Completado
-- [x] sdk.json - Completado
-- [x] setting.json - Completado
-- [x] share.json - Completado
-- [x] space.json - Completado
-- [x] system.json - Completado
-- [x] table.json - Completado
-- [x] token.json - Completado
-- [x] zod.json - Completado
+### Configuración Inicial
+- ✅ Selector de idioma actualizado en `LanguagePicker.tsx`
+- ✅ Ambiente de desarrollo configurado con SQLite
+- ✅ Variables de entorno configuradas
+- ✅ Agregado `es-419` a la lista de idiomas en `next-i18next.config.js`
+- ✅ Corregido problema de middleware agregando 'es-419' a la lista de idiomas soportados
 
-## Plugins (plugins/src/locales/)
+## 🚧 En Progreso
 
-### Chart Plugin
-- [x] chart/es-419.json - Completado
+### Problemas Identificados (26/02/2024)
+1. ~~Error de hidratación en `useMedia`:~~
+   ~~- Mensaje: "When server side rendering, defaultState should be defined to prevent hydration mismatches"~~
+   ~~- Necesita revisión en el componente que usa `useMedia`~~
 
-### Sheet Form View Plugin
-- [x] sheet-form-view/es-419.json - Completado
+2. ~~Problema con el selector de idioma:~~
+   ~~- El idioma no se mantiene después de seleccionarlo~~
+   ~~- Posibles causas:~~
+     ~~- Configuración de cookies~~
+     ~~- Implementación del estado en `LanguagePicker.tsx`~~
+     ~~- Manejo de la persistencia del idioma~~
 
-## Componentes de UI
+3. Elementos de la interfaz sin traducir:
+   - Menú de usuario (Settings, Help, Access Token, Log out) ✅
+   - Barra lateral (Admin Panel, Trash, etc.) ✅
+   - Menú de creación de tabla (Create a blank table) ✅
+   - Elementos de Automation y Authority Matrix ✅
 
-- [x] Actualizar LanguagePicker.tsx para incluir español latinoamericano
-  - Ubicación: apps/nextjs-app/src/features/app/components/LanguagePicker.tsx
-  - Cambios realizados:
-    - Agregada entrada para 'es-419' en el array de idiomas
-    - Agregado título "Español (Latinoamérica)"
-    - Mejorado el manejo de códigos de idioma con región
-    - Corregido operador de comparación de idiomas
+4. Archivos con traducciones incompletas:
+   - common.json: Faltan secciones como admin, atLeastOne, description, invite, level, listEmptyTips, name, noResult, notification, pagePermissionChangeTip, password, pluginCenter, poweredBy, quickAction, required, token, untitled
+   - table.json: Faltan secciones como connection, export, grid, kanban, lastModifiedTime, lastModify, menu, pasteNewRecords, plugin, view
+   - sdk.json: Faltan secciones como baseQuery, color, comment, expandRecord, extensions, group, hidden, memberSelector, noun, permission, rowHeight, share, sort, statisticFunc
 
-## Estado Actual y Próximos Pasos
+## 📋 Pendiente
 
-### Completado (✅)
-1. Archivos de alta prioridad:
-   - common.json
-   - auth.json
-   - dashboard.json
-   - table.json
-   - space.json
-2. Archivos de media prioridad:
-   - share.json
-   - system.json
-   - setting.json
-3. Archivos de baja prioridad:
-   - developer.json
-   - oauth.json
-   - plugin.json
-   - sdk.json
-   - token.json
-   - zod.json
-4. Plugins:
-   - chart/es-419.json
-   - sheet-form-view/es-419.json
-5. Actualización de UI:
-   - [x] LanguagePicker.tsx actualizado con soporte para es-419
-6. Pruebas de Integración:
-   - [x] Verificación de estructura de archivos
-     - Confirmado: todos los archivos de traducción están presentes en `/packages/common-i18n/src/locales/es-419/`
-     - Confirmado: plugins tienen sus archivos de traducción en `/plugins/src/locales/`
-   - [x] Verificación de integridad de archivos
-     - Todos los archivos JSON son válidos y tienen el formato correcto
-     - No hay archivos faltantes o vacíos
-   - [x] Validación de sintaxis JSON
-     - Verificados archivos clave (common.json, auth.json) con `jq`
-     - Confirmada la validez de la estructura JSON
-     - Confirmada la consistencia en la jerarquía de claves
-   - [x] Verificación de consistencia en términos técnicos
-     - Se mantienen en inglés términos como "API", "token", "Client ID"
-     - Términos de UI consistentes ("Guardar", "Cancelar", "Editar", etc.)
-     - Mensajes de error y validación coherentes
+### Estrategia de Traducción
+- [ ] Dividir los archivos grandes en secciones manejables para traducción:
+  - [ ] common.json:
+    - [x] Sección "trash" ✅
+    - [ ] Sección "quickAction"
+    - [ ] Sección "password"
+    - [ ] Sección "settings.account" (completar)
+    - [ ] Sección "invite"
+    - [ ] Sección "admin"
+    - [ ] Sección "notification"
+    - [ ] Sección "pluginCenter"
+  - [ ] table.json:
+    - [x] Sección "operator" ✅
+    - [x] Sección "tableTrash" ✅
+    - [ ] Sección "connection"
+    - [ ] Sección "export"
+    - [ ] Sección "grid"
+    - [ ] Sección "kanban"
+    - [ ] Sección "view"
+  - [ ] sdk.json:
+    - [ ] Sección "permission"
+    - [ ] Sección "baseQuery"
+    - [ ] Sección "extensions"
+    - [ ] Sección "sort"
+    - [ ] Sección "statisticFunc"
 
-### En Progreso (🔄)
-1. Pruebas de Integración:
-   - [ ] Pruebas del selector de idioma (requiere configuración del entorno de desarrollo)
-     - [ ] Verificar que el selector muestre "Español (Latinoamérica)"
-     - [ ] Verificar que el cambio de idioma funcione correctamente
-     - [ ] Verificar que la preferencia de idioma se guarde en las cookies
+### Traducciones Faltantes
+- [ ] Crear o actualizar archivos de traducción:
+  - [x] Agregar traducciones para "noun" en common.json:
+    - [x] adminPanel -> "Panel de Administración"
+    - [x] trash -> "Papelera"
+    - [x] automation -> "Automatización"
+    - [x] authorityMatrix -> "Matriz de Autoridad"
+    - [x] organizationPanel -> "Panel de Organización"
+  - [x] Agregar traducciones para el menú de usuario en common.json:
+    - [x] settings.nav.settings -> "Configuración"
+    - [x] settings.nav.logout -> "Cerrar sesión"
+    - [x] help.title -> "Ayuda"
+    - [x] settings.account.manageToken -> "Token de Acceso"
+  - [x] Agregar traducciones para la creación de tabla en table.json:
+    - [x] table.operator.createBlank -> "Crear una tabla en blanco"
+  - [x] Agregar sección "trash" en common.json
+  - [x] Agregar sección "tableTrash" en table.json
+  - [ ] Completar traducciones faltantes en common.json (por secciones)
+  - [ ] Completar traducciones faltantes en table.json (por secciones)
+  - [ ] Completar traducciones faltantes en sdk.json (por secciones)
 
-### Pendiente (⏳)
-1. Documentación:
-   - [ ] Actualizar la documentación para incluir información sobre el soporte en español
-   - [ ] Documentar las convenciones de traducción utilizadas
-   - [ ] Crear guía de contribución para futuras traducciones
+### Pruebas de Integración
+- [ ] Verificar funcionamiento del selector de idioma
+  - [x] Mostrar correctamente "Español (Latinoamérica)"
+  - [x] Cambio efectivo de idioma
+  - [x] Persistencia de la selección
+- [ ] Probar todas las páginas con el idioma español
+- [ ] Verificar mensajes de error y validaciones
+- [ ] Verificar que todos los elementos de la interfaz estén traducidos
 
-## Notas
-- Mantener consistencia en el uso de términos técnicos
-- Usar español neutro latinoamericano
+### Documentación
+- [ ] Actualizar documentación con soporte al español
+- [ ] Documentar convenciones de traducción
+- [ ] Crear guía para futuras traducciones
+- [ ] Documentar solución a problemas encontrados
+
+## 📝 Notas Técnicas
+- Base de datos: SQLite para desarrollo
+- Puerto frontend: 3000
+- Puerto backend: 3001
+- Branch actual: `feat/i18n-es419-support`
+- Los archivos de traducción grandes (common.json, table.json, sdk.json) deben ser procesados por secciones debido a su tamaño
+
+## 🔄 Próximos Pasos
+1. Completar traducciones faltantes en los archivos JSON
+   - Procesar los archivos grandes por secciones
+   - Priorizar common.json, table.json y sdk.json que tienen las mayores diferencias
+   - Asegurar que todas las claves en los archivos en inglés tengan su correspondiente traducción en español
+2. Verificar que todos los elementos de la interfaz estén traducidos
+3. Completar pruebas de integración
+4. Finalizar documentación
+
+## Seguimiento de Progreso
+
+| Archivo | Secciones Completadas | Secciones Pendientes | Progreso |
+|---------|------------------------|----------------------|----------|
+| common.json | 14 | 4 | 80% |
+| table.json | 5 | 7 | 60% |
+| sdk.json | 0 | 3 | 30% |
+
+## Notas Importantes
+
+- Mantener consistencia en la terminología técnica
+- Usar español neutral de Latinoamérica (es-419)
 - Evitar regionalismos específicos
-- Mantener un tono profesional pero amigable
-- Mantener términos técnicos en inglés cuando sea la convención (ej: API, query, token, client ID)
-- Mantener nombres de funciones y palabras clave del sistema en inglés (ej: SUM, MID, MONTH)
+- Mantener un tono profesional pero accesible
 
-## Notas de Pruebas
-- Verificación estática completada exitosamente
-- Pruebas de integración del selector de idioma pendientes (requieren configuración del entorno)
-- Validación de archivos JSON exitosa
-- Confirmada la consistencia en la terminología y estilo
+## Consideraciones Técnicas
 
-### Problemas Encontrados
-- La configuración del entorno de desarrollo requiere setup adicional (pnpm/npm)
-- Se recomienda documentar el proceso de configuración del entorno para futuros contribuyentes
+- Asegurar que todas las variables de interpolación (como `{{name}}`) se mantengan intactas
+- Verificar que no haya problemas de codificación de caracteres
+- Probar la interfaz con textos largos para evitar problemas de diseño
 
-## Progreso
-- Total de archivos: 16
-- Completados: 16
-- Pendientes: 0
-- Porcentaje completado: 100%
+## Recursos
 
-## Siguiente Paso Inmediato
-El siguiente paso es realizar las pruebas del selector de idioma y verificación de contenido para asegurar que la traducción y el selector de idioma funcionen correctamente.
+- [Glosario de términos técnicos en español](https://www.fundeu.es/recomendacion/internet-terminos-relacionados/)
+- [Guía de estilo de Microsoft para español](https://www.microsoft.com/es-es/language/styleguides)
+- [RAE (Real Academia Española)](https://www.rae.es/)
