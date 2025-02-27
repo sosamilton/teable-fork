@@ -288,5 +288,51 @@
     "hasNoneOf": "no tiene ninguno de",
     "hasAnyOf": "tiene cualquiera de",
     "hasExactly": "tiene exactamente"
+  },
+  "grid": {
+    "prefillingRowTitle": "Agregar nuevo registro",
+    "prefillingRowTooltip": "Por favor, ingresa los datos del nuevo registro a continuación. El registro se guardará automáticamente cuando hagas clic fuera de esta fila.",
+    "presortRowTitle": "Este registro ha sido filtrado o movido debido a reglas de ordenamiento"
+  },
+  "form": {
+    "fieldsManagement": "Campos",
+    "addAll": "Agregar todos",
+    "removeAll": "Eliminar todos",
+    "hideFieldTip": "Ocultar el campo aquí",
+    "unableAddFieldTip": "No se puede agregar este tipo de campo",
+    "removeFromFormTip": "Eliminar del formulario",
+    "descriptionPlaceholder": "Ingresa la descripción del formulario",
+    "dragToFormTip": "Arrastra el campo aquí para agregarlo al formulario"
+  },
+  "kanban": {
+    "toolbar": {
+      "hideFieldName": "Ocultar nombre del campo",
+      "customizeCards": "Personalizar tarjetas",
+      "stackedBy": "Agrupado por <0/>",
+      "chooseStackingField": "Elegir un campo de agrupación",
+      "chooseStackingFieldDescription": "¿Qué campo te gustaría usar para esta vista kanban? Tus registros se agruparán según este campo.",
+      "hideEmptyStack": "Ocultar grupo vacío",
+      "imageSetting": "Configuración de imagen",
+      "fit": "Ajustar",
+      "noImage": "Sin imagen",
+      "chooseAttachmentField": "Elegir campo de adjunto"
+    },
+    "stack": {
+      "addStack": "Agregar grupo",
+      "noCards": "Sin tarjetas",
+      "uncategorized": "Sin categorizar"
+    },
+    "stackMenu": {
+      "collapseStack": "Colapsar grupo",
+      "renameStack": "Renombrar grupo",
+      "deleteStack": "Eliminar grupo"
+    },
+    "cardMenu": {
+      "insertCardAbove": "Insertar tarjeta arriba",
+      "insertCardBelow": "Insertar tarjeta abajo",
+      "expandCard": "Expandir tarjeta",
+      "deleteCard": "Eliminar tarjeta",
+      "duplicateCard": "Duplicar tarjeta"
+    }
   }
 }
