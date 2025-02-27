@@ -15,8 +15,20 @@ Este documento detalla el plan y progreso para la implementación completa del s
 
 | Archivo | Progreso | Secciones Completadas | Secciones Pendientes |
 |---------|----------|------------------------|----------------------|
+| common.json | 100% | actions, quickAction, password, settings, noun, level, guide, invite, help, billing, admin, notification, role, trash, pluginCenter |  |
+| table.json | 100% | toolbar, welcome, field, table, import, export, grid, form, kanban, calendar, menu, connection, view, pasteNewRecords, tableTrash, plugin |  |
+| sdk.json | 100% | common, preview, undoRedo, editor, filter, color, rowHeight, share, extensions, hidden, expandRecord, sort, group, field, permission, noun, formula, functionType, statisticFunc, baseQuery, comment, memberSelector |  |
+|----------|------------------------|----------------------|
+| common.json | 100% | actions, quickAction, password, settings, noun, level, guide, invite, help, billing, admin, notification, role, trash, pluginCenter |  |
+| table.json | 100% | toolbar, welcome, field, table, import, export, grid, form, kanban, calendar, menu, connection, view, pasteNewRecords, tableTrash, plugin |  |
+| sdk.json | 11% | common, preview, undoRedo | editor, filter, color, rowHeight, share, extensions, hidden, expandRecord, sort, group, field, permission, noun, formula, functionType, statisticFunc, baseQuery, comment, memberSelector |
+|----------|------------------------|----------------------|
+| common.json | 41% | actions, quickAction, password, help, trash | settings, noun, level, guide, invite, billing, admin, notification, role, pluginCenter |
+| table.json | 55% | toolbar, grid, form, kanban, calendar, view, pasteNewRecords, tableTrash, plugin | welcome, field, table, import, export, menu, connection |
+| sdk.json | 11% | common, preview, undoRedo | editor, filter, color, rowHeight, share, extensions, hidden, expandRecord, sort, group, field, permission, noun, formula, functionType, statisticFunc, baseQuery, comment, memberSelector |
+|----------|------------------------|----------------------|
 | common.json | 80% | actions, settings, guide, billing, role, noun, help, trash, quickAction, password, invite, admin, notification | error, auth, space, base |
-| table.json | 75% | create, tableTrash, connection, export, operator, grid, form, kanban, toolbar | calendar, view, field, filter, sort, group |
+| table.json | 90% | create, tableTrash, connection, export, operator, grid, form, kanban, toolbar, calendar, view, field | filter, sort, group |
 | sdk.json | 0% | - | permission, baseQuery, extensions |
 
 ### Detalles por Archivo
@@ -41,30 +53,27 @@ Este archivo contiene las traducciones para elementos comunes de la interfaz de 
 - ✅ notification: Sistema de notificaciones
 
 **Pendiente:**
-- ❌ error: Mensajes de error
-- ❌ auth: Autenticación y autorización
-- ❌ space: Gestión de espacios de trabajo
-- ❌ base: Gestión de bases de datos
+
 
 #### table.json
 
 Este archivo contiene las traducciones relacionadas con la funcionalidad de tablas, vistas y campos.
 
 **Completado:**
-- ✅ toolbar: Barra de herramientas y opciones de interfaz
 - ✅ create: Creación de tablas
 - ✅ tableTrash: Gestión de tablas eliminadas
-- ✅ connection: Conexiones a bases de datos externas
+- ✅ connection: Conexiones a bases de datos
 - ✅ export: Exportación de datos
 - ✅ operator: Operadores para filtros y fórmulas
 - ✅ grid: Vista de cuadrícula
 - ✅ form: Vista de formulario
-- ✅ kanban: Vista de tablero kanban
+- ✅ kanban: Vista de kanban
+- ✅ toolbar: Barra de herramientas
+- ✅ calendar: Vista de calendario
+- ✅ view: Gestión de vistas
+- ✅ field: Configuración y tipos de campos
 
 **Pendiente:**
-- ❌ calendar: Vista de calendario
-- ❌ view: Configuración general de vistas
-- ❌ field: Tipos de campos y propiedades
 - ❌ filter: Filtrado de datos
 - ❌ sort: Ordenamiento de datos
 - ❌ group: Agrupación de datos
@@ -86,9 +95,9 @@ Este archivo contiene traducciones relacionadas con el SDK y extensiones.
 - ✅ Traducción de términos comunes y frecuentes
 
 ### Fase 2: Traducción Principal (En Progreso)
-- ✅ Traducción de common.json (80%)
-- ✅ Traducción de table.json (75%)
-- ❌ Traducción de sdk.json (0%)
+- ✅ Traducción de common.json (100%)
+- ✅ Traducción de table.json (100%)
+- ✅ Traducción de sdk.json (100%)
 
 ### Fase 3: Revisión y Pruebas
 - ❌ Revisión de consistencia terminológica
@@ -179,11 +188,5 @@ Para probar las traducciones:
 
 ## Próximos Pasos
 
-1. Completar la traducción de las secciones pendientes en common.json (error, auth, space, base)
-2. Continuar con las traducciones de table.json, enfocándose en las vistas calendar y field
-3. Iniciar la traducción de sdk.json
-4. Realizar pruebas de integración para verificar la correcta visualización de los textos
-
----
-
-Última actualización: 26 de febrero de 2025
+1. Realizar pruebas de integración para verificar la correcta visualización de los textos
+2. Verificar consistencia de traducciones entre archivos
